@@ -35,7 +35,7 @@ if not st.session_state['logged_in']:
         login_button = st.button("Unlock Celebration 🎉", use_container_width=True)
         
         if login_button:
-            if password.lower() == "ali123": 
+            if password == "Mohmmad Ali": 
                 st.session_state['logged_in'] = True
                 st.success("Access Granted! Loading your surprise...")
                 time.sleep(1)
