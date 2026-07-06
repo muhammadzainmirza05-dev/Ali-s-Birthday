@@ -94,13 +94,13 @@ else:
         <div style="background-color: #fff5f5; padding: 25px; border-radius: 15px; border-left: 6px solid #FF4B4B; box-shadow: 0px 4px 10px rgba(0,0,0,0.05); margin-top: 20px;">
             <p style="font-size: 18px; color: #2d3748; line-height: 1.8; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                 <b>Dear Brother Ali,</b><br><br>
-                Happy Birthday my brother Ali, Allah apko dunya or akhirat main kamyab karain. 
-                Jo khawahish apke dill main hain wo sub Allah puri karain. Allah Apko acha ghar, gari 
-                and family Naseeb karain. Apko bhot success mile. Apke or Apki Family ke sare issues 
-                resolve karain and ap sub ke lye asaniyan farmyein. <b>Ameen.</b> ❤️<br><br>
+                Happy Birthday my brother Ali! Allah aapko dunya aur akhirat mein kamyab karein. 
+                Jo khwahishein aapke dil mein hain, woh sab Allah puri karein. Allah aapko acha ghar, gaari, 
+                aur family naseeb karein. Aapko bohat success mile. Aapke aur aapki family ke saare issues 
+                resolve karein aur aap sab ke liye asaniyan farmayein. <b>Ameen.</b> ❤️<br><br>
                 <span style="color: #e53e3e; font-weight: 500;">
-                Ik tum mujh se naraz hoo. main maafi chahta hoon. you are the only one friend i have. 
-                i swear to God i miss u everyday. i always think about you. 🥺✨
+                Ik tum mujhse naraz ho, main maafi chahta hoon. You are the only friend I have. 
+                I swear to God, I miss you every day. I always think about you. 🥺✨
                 </span>
             </p>
         </div>
