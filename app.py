@@ -76,10 +76,15 @@ else:
             # Placeholder/Instruction if the image is missing
             st.info("💡 To show Ali's picture, upload a file named 'ali.jpg' to the same folder where app.py is located on GitHub.")
 
+
     # --- UPDATED: Play Audio automatically ---
-    # Using the standard Happy Birthday to You audio
-    os.path.exists("birthday.mp3")
-    st.audio("birthday.mp3", format="audio/mp3", autoplay=True)
+    if os.path.exists("birthday.mp3"):
+        st.audio("birthday.mp3", format="audio/mp3", autoplay=True)
+    else:
+        st.warning("⚠️ Audio file 'birthday.mp3' not found in the folder. Please check GitHub.")
+        # Fallback music just in case
+        st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", format="audio/mp3", autoplay=True)
+        
     # Display Lottie Animation
     if lottie_cake:
         st_lottie(lottie_cake, height=300, key="cake")
