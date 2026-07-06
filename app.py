@@ -3,11 +3,12 @@ import requests
 from streamlit_lottie import st_lottie
 import time
 import os
+from PIL import Image
 
 # 1. Page Configuration
 st.set_page_config(page_title="Happy Birthday Ali!", page_icon="🎂", layout="centered")
 
-# 2. Helper function to load Lottie Animations
+# 2. Helper functions to load animations
 def load_lottieurl(url: str):
     try:
         r = requests.get(url)
@@ -17,8 +18,9 @@ def load_lottieurl(url: str):
     except Exception:
         return None
 
-# Load birthday animations
+# Load birthday animations from public Lottie links
 lottie_cake = load_lottieurl("https://lottie.host/809c9584-699a-4c28-98e6-b60fc18ccdc1/MhNcbqK7R9.json")
+lottie_confetti = load_lottieurl("https://lottie.host/ddb70bda-d7a5-4f36-9b0d-ce0b8e6270b2/9ZpPbe6n8C.json")
 
 # 3. Session State for Login Tracking
 if 'logged_in' not in st.session_state:
@@ -34,6 +36,7 @@ if not st.session_state['logged_in']:
         password = st.text_input("Enter the secret password to enter:", type="password")
         login_button = st.button("Unlock Celebration 🎉", use_container_width=True)
         
+        # We'll use your password here: 'ali123'
         if login_button:
             if password == "Mohmmad Ali": 
                 st.session_state['logged_in'] = True
@@ -51,24 +54,35 @@ else:
     
     # Custom Header styling
     st.markdown("""
-        <h1 style='text-align: center; color: #FF4B4B; font-size: 45px; font-family: Arial; font-weight: bold;'>
+        <h1 style='text-align: center; color: #FF4B4B; font-size: 50px; font-family: Arial; font-weight: bold;'>
             🎉 HAPPY BIRTHDAY, ALI! 🎂
         </h1>
     """, unsafe_allow_html=True)
     
     st.write("---")
     
-    # Audio Setup (Autoplay feature)
-    # Agar birthday.mp3 file maujood hai toh woh play hogi, nahi toh background music play hoga
-    if os.path.exists("birthday.mp3"):
-        st.audio("birthday.mp3", format="audio/mp3", autoplay=True)
-    else:
-        # Fallback royalty-free music link agar file upload nahi ki abhi tak
-        st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", format="audio/mp3", autoplay=True)
+    # --- ADDED: Picture of Ali ---
+    # Center the image using columns
+    img_col1, img_col2, img_col3 = st.columns([1, 2, 1])
+    with img_col2:
+        # Step 1: Add a photo named 'ali.jpg' (or ali.png) in your GitHub repo folder
+        pic_filename = "ali.jpg" 
+        
+        if os.path.exists(pic_filename):
+            ali_photo = Image.open(pic_filename)
+            # This makes the image smaller and centers it
+            st.image(ali_photo, caption="Birthday Boy: Ali ❤️", use_column_width=True)
+        else:
+            # Placeholder/Instruction if the image is missing
+            st.info("💡 To show Ali's picture, upload a file named 'ali.jpg' to the same folder where app.py is located on GitHub.")
+
+    # --- UPDATED: Play Audio automatically ---
+    # Using the standard Happy Birthday to You audio
+    st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", format="audio/mp3", autoplay=True)
     
     # Display Lottie Animation
     if lottie_cake:
-        st_lottie(lottie_cake, height=250, key="cake")
+        st_lottie(lottie_cake, height=300, key="cake")
     
     # Your Personal and Emotional Message Box
     st.markdown("""
