@@ -37,7 +37,7 @@ if not st.session_state['logged_in']:
         
         # Define your password here (e.g., 'ali2026' or 'bestbrother')
         if login_button:
-            if password.lower() == "Mohmmad Ali": 
+            if password == "Mohmmad Ali": 
                 st.session_state['logged_in'] = True
                 st.success("Access Granted! Loading your surprise...")
                 time.sleep(1)
