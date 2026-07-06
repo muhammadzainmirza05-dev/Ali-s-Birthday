@@ -79,7 +79,7 @@ else:
     # --- UPDATED: Play Audio automatically ---
     # Using the standard Happy Birthday to You audio
     os.path.exists("birthday.mp3")
-        st.audio("birthday.mp3", format="audio/mp3", autoplay=True)
+    st.audio("birthday.mp3", format="audio/mp3", autoplay=True)
     # Display Lottie Animation
     if lottie_cake:
         st_lottie(lottie_cake, height=300, key="cake")
