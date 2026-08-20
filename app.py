@@ -234,7 +234,7 @@ else:
     with c2:
         if os.path.exists("ali.jpg"):
             ali_photo = Image.open("ali.jpg")
-            st.image(ali_photo, caption="Birthday Boy: Ali ❤️", use_column_width=True)
+            st.image(ali_photo, caption="Birthday Boy: Ali ❤️", use_container_width=True)
         else:
             st.markdown("<div style='background: rgba(255,107,138,0.07); border: 1px dashed rgba(255,107,138,0.28); border-radius: 20px; padding: 2rem; text-align: center; color: rgba(201,184,255,.55); font-size: 13.5px; line-height: 1.7;'>📷 Add <code style='color:#ff6b8a; background:rgba(255,107,138,.12); padding:2px 6px; border-radius:5px;'>ali.jpg</code> to your repo folder to display Ali's photo here.</div>", unsafe_allow_html=True)
 
