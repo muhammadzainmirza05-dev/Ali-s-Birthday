@@ -187,48 +187,15 @@ if 'logged_in' not in st.session_state:
 if not st.session_state['logged_in']:
 
     st.markdown("""
-    <div style="text-align:center; padding: 2rem 0 2.5rem; animation: fadeUp .7s ease both;">
-        <div style="
-            font-size: 60px;
-            display: inline-block;
-            animation: float 3s ease-in-out infinite;
-            filter: drop-shadow(0 0 24px rgba(255,107,138,.55));
-            margin-bottom: 16px;
-        ">🎂</div>
-
-        <h1 style="
-            font-family: 'Playfair Display', serif;
-            font-size: 2.3rem;
-            font-weight: 900;
-            color: #f0e6ff;
-            margin: 0 0 10px;
-            letter-spacing: -0.01em;
-            text-shadow: 0 0 40px rgba(255,107,138,.25);
-        ">Private Birthday Portal</h1>
-
-        <p style="
-            color: rgba(201,184,255,.5);
-            font-size: 11.5px;
-            font-weight: 400;
-            letter-spacing: .18em;
-            text-transform: uppercase;
-            margin: 0;
-        ">A special surprise awaits ✨</p>
+    <div style='text-align:center; padding: 2rem 0 2.5rem; animation: fadeUp .7s ease both;'>
+        <div style='font-size: 60px; display: inline-block; animation: float 3s ease-in-out infinite; filter: drop-shadow(0 0 24px rgba(255,107,138,.55)); margin-bottom: 16px;'>🎂</div>
+        <h1 style='font-family: Playfair Display, serif; font-size: 2.3rem; font-weight: 900; color: #f0e6ff; margin: 0 0 10px; letter-spacing: -0.01em; text-shadow: 0 0 40px rgba(255,107,138,.25);'>Private Birthday Portal</h1>
+        <p style='color: rgba(201,184,255,.5); font-size: 11.5px; font-weight: 400; letter-spacing: .18em; text-transform: uppercase; margin: 0;'>A special surprise awaits ✨</p>
     </div>
     """, unsafe_allow_html=True)
 
     # Login card shell (visual only)
-    st.markdown("""
-    <div style="
-        background: rgba(255,255,255,0.04);
-        border: 1px solid rgba(255,107,138,0.18);
-        border-radius: 24px;
-        padding: 2.4rem 2rem 2rem;
-        margin: 0 auto;
-        box-shadow: 0 24px 64px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06);
-        animation: fadeUp .8s ease .15s both;
-    ">
-    """, unsafe_allow_html=True)
+    st.markdown("<div style='background: rgba(255,255,255,0.04); border: 1px solid rgba(255,107,138,0.18); border-radius: 24px; padding: 2.4rem 2rem 2rem; margin: 0 auto; box-shadow: 0 24px 64px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06); animation: fadeUp .8s ease .15s both;'>", unsafe_allow_html=True)
 
     col1, col2, col3 = st.columns([0.5, 5, 0.5])
     with col2:
@@ -247,15 +214,7 @@ if not st.session_state['logged_in']:
 
     st.markdown("</div>", unsafe_allow_html=True)  # close card shell
 
-    st.markdown("""
-    <p style="
-        text-align:center;
-        color: rgba(201,184,255,.22);
-        font-size: 11px;
-        letter-spacing: .08em;
-        margin-top: 2.2rem;
-    ">Made with ❤️ — for someone special</p>
-    """, unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; color: rgba(201,184,255,.22); font-size: 11px; letter-spacing: .08em; margin-top: 2.2rem;'>Made with ❤️ — for someone special</p>", unsafe_allow_html=True)
 
 
 # ══════════════════════════════════════════════════════════════
@@ -266,39 +225,7 @@ else:
     st.snow()
 
     # ── Hero Header ──
-    st.markdown("""
-    <div style="text-align:center; padding: 1.5rem 0 2rem; animation: fadeUp .6s ease both;">
-        <div style="
-            font-size: 65px;
-            display: inline-block;
-            animation: float 3s ease-in-out infinite;
-            filter: drop-shadow(0 0 30px rgba(255,215,0,.6));
-            margin-bottom: 14px;
-        ">🎂</div>
-
-        <h1 style="
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2rem, 8vw, 3.2rem);
-            font-weight: 900;
-            background: linear-gradient(90deg, #ff6b8a, #ffd700, #c9b8ff, #ff6b8a);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: shimmer 3.5s linear infinite;
-            margin: 0 0 10px;
-            line-height: 1.15;
-        ">Happy Birthday,<br>Ali! 🎉</h1>
-
-        <p style="
-            color: rgba(201,184,255,.48);
-            font-size: 11.5px;
-            letter-spacing: .18em;
-            text-transform: uppercase;
-            margin: 0;
-        ">A birthday surprise — just for you ✨</p>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("<div style='text-align:center; padding: 1.5rem 0 2rem; animation: fadeUp .6s ease both;'><div style='font-size: 65px; display: inline-block; animation: float 3s ease-in-out infinite; filter: drop-shadow(0 0 30px rgba(255,215,0,.6)); margin-bottom: 14px;'>🎂</div><h1 style='font-family: Playfair Display, serif; font-size: clamp(2rem, 8vw, 3.2rem); font-weight: 900; background: linear-gradient(90deg, #ff6b8a, #ffd700, #c9b8ff, #ff6b8a); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 3.5s linear infinite; margin: 0 0 10px; line-height: 1.15;'>Happy Birthday,<br>Ali! 🎉</h1><p style='color: rgba(201,184,255,.48); font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; margin: 0;'>A birthday surprise — just for you ✨</p></div>", unsafe_allow_html=True)
 
     st.write("---")
 
@@ -309,22 +236,7 @@ else:
             ali_photo = Image.open("ali.jpg")
             st.image(ali_photo, caption="Birthday Boy: Ali ❤️", use_column_width=True)
         else:
-            st.markdown("""
-            <div style="
-                background: rgba(255,107,138,0.07);
-                border: 1px dashed rgba(255,107,138,0.28);
-                border-radius: 20px;
-                padding: 2rem;
-                text-align: center;
-                color: rgba(201,184,255,.55);
-                font-size: 13.5px;
-                line-height: 1.7;
-            ">
-                📷 Add <code style="color:#ff6b8a; background:rgba(255,107,138,.12);
-                padding:2px 6px; border-radius:5px;">ali.jpg</code> to your repo folder
-                to display Ali's photo here.
-            </div>
-            """, unsafe_allow_html=True)
+            st.markdown("<div style='background: rgba(255,107,138,0.07); border: 1px dashed rgba(255,107,138,0.28); border-radius: 20px; padding: 2rem; text-align: center; color: rgba(201,184,255,.55); font-size: 13.5px; line-height: 1.7;'>📷 Add <code style='color:#ff6b8a; background:rgba(255,107,138,.12); padding:2px 6px; border-radius:5px;'>ali.jpg</code> to your repo folder to display Ali's photo here.</div>", unsafe_allow_html=True)
 
     st.write("")
 
@@ -343,56 +255,17 @@ else:
 
     # ── Personal Message Card ──
     st.markdown("""
-    <div style="
-        background: rgba(255,107,138,0.05);
-        border: 1px solid rgba(255,107,138,0.18);
-        border-left: 4px solid #ff6b8a;
-        border-radius: 22px;
-        padding: 2.2rem 2rem;
-        margin: 1.2rem 0 1.8rem;
-        box-shadow: 0 12px 48px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
-        backdrop-filter: blur(12px);
-        animation: fadeUp .8s ease .2s both;
-    ">
-        <p style="
-            font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
-            font-style: italic;
-            color: #ff6b8a;
-            font-weight: 700;
-            margin: 0 0 1.1rem;
-        ">Dear Brother Ali,</p>
-
-        <p style="
-            font-family: 'Inter', sans-serif;
-            font-size: 15.5px;
-            color: rgba(240,230,255,.85);
-            line-height: 1.9;
-            font-weight: 300;
-            margin: 0 0 1.3rem;
-        ">
+    <div style='background: rgba(255,107,138,0.05); border: 1px solid rgba(255,107,138,0.18); border-left: 4px solid #ff6b8a; border-radius: 22px; padding: 2.2rem 2rem; margin: 1.2rem 0 1.8rem; box-shadow: 0 12px 48px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05); backdrop-filter: blur(12px); animation: fadeUp .8s ease .2s both;'>
+        <p style='font-family: Playfair Display, serif; font-size: 1.2rem; font-style: italic; color: #ff6b8a; font-weight: 700; margin: 0 0 1.1rem;'>Dear Brother Ali,</p>
+        <p style='font-family: Inter, sans-serif; font-size: 15.5px; color: rgba(240,230,255,.85); line-height: 1.9; font-weight: 300; margin: 0 0 1.3rem;'>
             Happy Birthday my brother Ali! Allah aapko dunya aur akhirat mein kamyab karein.
             Jo khwahishein aapke dil mein hain, woh sab Allah puri karein. Allah aapko acha ghar, gaari,
             aur family naseeb karein. Aapko bohat success mile. Aapke aur aapki family ke saare issues
             resolve karein aur aap sab ke liye asaniyan farmayein.
-            <strong style="color:#ffd700; font-weight:600;">Ameen.</strong> ❤️
+            <strong style='color:#ffd700; font-weight:600;'>Ameen.</strong> ❤️
         </p>
-
-        <div style="
-            background: rgba(255,107,138,0.07);
-            border-radius: 14px;
-            padding: 1.1rem 1.3rem;
-            border-left: 2px solid rgba(255,107,138,0.35);
-        ">
-            <p style="
-                font-family: 'Inter', sans-serif;
-                font-size: 15px;
-                color: rgba(255,185,200,.88);
-                line-height: 1.85;
-                margin: 0;
-                font-style: italic;
-                font-weight: 300;
-            ">
+        <div style='background: rgba(255,107,138,0.07); border-radius: 14px; padding: 1.1rem 1.3rem; border-left: 2px solid rgba(255,107,138,0.35);'>
+            <p style='font-family: Inter, sans-serif; font-size: 15px; color: rgba(255,185,200,.88); line-height: 1.85; margin: 0; font-style: italic; font-weight: 300;'>
                 Ik tum mujhse naraz ho, main maafi chahta hoon. You are the only friend I have.
                 I swear to God, I miss you every day. I always think about you. 🥺✨
             </p>
@@ -407,12 +280,4 @@ else:
             st.session_state['logged_in'] = False
             st.rerun()
 
-    st.markdown("""
-    <p style="
-        text-align:center;
-        color: rgba(201,184,255,.2);
-        font-size: 11px;
-        letter-spacing: .08em;
-        margin-top: 2rem;
-    ">✨ Made with love — a surprise just for Ali ✨</p>
-    """, unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; color: rgba(201,184,255,.2); font-size: 11px; letter-spacing: .08em; margin-top: 2rem;'>✨ Made with love — a surprise just for Ali ✨</p>", unsafe_allow_html=True)
