@@ -130,7 +130,7 @@ else:
         pic_filename = "ali.jpg" 
         if os.path.exists(pic_filename):
             ali_photo = Image.open(pic_filename)
-            st.image(ali_photo, caption="Birthday Boy: Ali ❤️", use_column_width=True)
+            st.image(ali_photo, caption="Birthday Boy: Ali ❤️", use_container_width=True)
         else:
             st.info("💡 Upload 'ali.jpg' to the folder to display a photo here.")
 
